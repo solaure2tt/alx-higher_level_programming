@@ -8,7 +8,7 @@ else:
 last = numberpo % 10
 if number < 0:
     last = last * (-1)
-text = "less than 6 and not 0"
+text = "is less than 6 and not 0"
 if last == 0:
     print("Last digit of {} is {} and is 0".format(number, last))
 elif last > 5:
