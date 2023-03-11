@@ -4,8 +4,8 @@ def print_matrix_integer(matrix=[[]]):
         for inner_list in matrix:
             for i in range(0, len(inner_list)):
                 if i == len(inner_list) - 1:
-                    print("{}".format(inner_list[i]))
+                    print("{:d}".format(inner_list[i]))
                 else:
-                    print("{}".format(inner_list[i]), end=" ")
+                    print("{:d}".format(inner_list[i]), end=" ")
     else:
         print("")
