@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 def no_c(my_string):
     res = ""
     if len(my_string) > 0:
