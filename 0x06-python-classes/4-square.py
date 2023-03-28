@@ -20,7 +20,8 @@ class Square:
         """function that returns the current square area"""
 
 
-        return (self.__size * self.__size)
+        if self.__size:
+            return ((self.__size) * (self.__size))
 
     @property
     def size(self):
