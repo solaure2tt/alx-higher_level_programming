@@ -9,10 +9,13 @@ class Square:
     def __init__(self, size):
         """ Initialization
         Args: 
-            size: is the size of the square will have
+            size (int): is the size of the square will have
 
         Attributes:
             size: is the size of the square will have
+
+        Returns:
+            square
         """
 
 
