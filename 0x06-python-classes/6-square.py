@@ -64,14 +64,24 @@ class Square:
     def position(self):
         """to retrieve a position"""
         if self.__position:
-            if isinstance(position, tuple) and len(position) == 2:
-                if isinstance(position[0], int):
-                    if isinstance(position[1], int):
-                        if position[0] >= 0 and position[1] >= 0:
-                            self.__position = position
+            if isinstance(self.__position, tuple):
+                if len(self.__position) == 2:
+                    if isinstance(self.__position[0], int):
+                        if isinstance(self.__position[1], int):
+                            if self.__position[0] >= 0:
+                                if self.__position[1] >= 0:
+                                    return (self.__position)
+                                else:
+                                    msg = "position must be a tuple of 2 "
+                                    msg = msg + "positive integers"
+                                    raise TypeError(msg)
+                            else:
+                                msg = "position must be a tuple of 2 "
+                                msg = msg + "positive integers"
+                                raise TypeError(msg)
                         else:
-                            msg = "position must be a tuple of 2 "
-                            msg = msg + "positive integers"
+                            msg = "position must be a tuple of "
+                            msg = msg + "2 positive integers"
                             raise TypeError(msg)
                     else:
                         msg = "position must be a tuple of 2 positive integers"
@@ -83,7 +93,8 @@ class Square:
                 msg = "position must be a tuple of 2 positive integers"
                 raise TypeError(msg)
         else:
-            msg = "position must be a tuple of 2 positive integers"
+            msg = "position must be a tuple "
+            msg = msg + "of 2 positive integers"
             raise TypeError(msg)
 
     @position.setter
