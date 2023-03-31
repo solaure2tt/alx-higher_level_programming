@@ -1,0 +1,51 @@
+Module ``add_integer``
+======================
+
+test ``add_integer`` class
+--------------------------
+
+We have to first import ``add_integer`` from ``0-add_integer`` module
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+After that we can test it:
+
+	>>> add_integer(10, 5)
+	15
+
+	>>> add_integer(1)
+	99
+
+	>>> add_integer(-3, 2)
+	-1
+	
+	>>> add_integer(-3, -4)
+	-7
+
+	>>> add_integer(1.2, 3)
+	4
+
+	>>> add_integer(-4.3, 3.6)
+	-1
+
+	>>> add_integer(-3.4)
+	95
+
+	>>> add_integer("char", 2)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+	>>> add_integer("char")
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+	>>> add_integer(2, "cha")
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
+
+	>>> add_integer("ch", "ch")
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
