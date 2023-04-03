@@ -1,1 +1,1 @@
-This repository is to learn high level programming python and advanced C
+This folder is to learn more how to use classes in python
