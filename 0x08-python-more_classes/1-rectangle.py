@@ -6,9 +6,13 @@ class Rectangle:
     """This class is to defined a rectangle"""
     def __init__(self, width=0, height=0):
         """instanciation of a rectangle
-        Args: width - the width of the rectangle
+        Args: 
+            width - the width of the rectangle
             height - the height of the rectangle
-            """
+        Raises:
+            TypeError: if size is not integer
+            ValueError: if size is less than zero
+        """
         self.width = width
         self.height = height
 
@@ -16,7 +20,7 @@ class Rectangle:
     def width(self):
         """retrieve a width of the rectangle"""
         if self.__width:
-            return self.width
+            return self.__width
         else:
             return 0
 
@@ -35,7 +39,7 @@ class Rectangle:
     def height(self):
         """retrieve the value of the height"""
         if self.__height:
-            return self.height
+            return self.__height
         else:
             return 0
 
