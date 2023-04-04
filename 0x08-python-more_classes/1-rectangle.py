@@ -4,6 +4,7 @@
 
 class Rectangle:
     """This class is to defined a rectangle"""
+
     def __init__(self, width=0, height=0):
         """instanciation of a rectangle
         Args: 
@@ -13,8 +14,8 @@ class Rectangle:
             TypeError: if size is not integer
             ValueError: if size is less than zero
         """
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
