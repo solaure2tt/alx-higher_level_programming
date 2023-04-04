@@ -1,0 +1,60 @@
+The ``text_indentation`` module
+==========================
+
+Using ``text_indentation``
+---------------------
+
+First import ``text_indentation`` from the ``text_indentation`` module:
+
+	>>> text_ind = __import__('5-text_indentation').text_indentation
+
+Now use it:
+
+	>>> text_ind("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Utrum igitur tibi: litteram videor an totas paginas commovere")
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	<BLANKLINE>
+	Quonam modo?
+	<BLANKLINE>
+	Utrum igitur tibi:
+	<BLANKLINE>
+	litteram videor an totas paginas commovere
+
+	>>> text_ind("Lorem:")
+	Lorem:
+	<BLANKLINE>
+
+	>>> text_ind("Laure Tch")
+	Laure Tch
+
+	>>> text_ind(":Laure")
+	:
+	<BLANKLINE>
+	Laure
+
+	>>> text_ind(-9)
+        Traceback (most recent call last):
+        ...
+        TypeError: text must be a string
+
+	>>> text_ind("?")
+	?
+	<BLANKLINE>
+
+	>>> text_ind("?.")
+	?
+	<BLANKLINE>
+	.
+	<BLANKLINE>
+
+	>>> text_ind("")
+
+	>>> text_ind(None)
+        Traceback (most recent call last):
+        ...
+        TypeError: text must be a string
+
+	>>> text_ind(" ")
+
+	>>> text_ind(" :")
+	:
+	<BLANKLINE>

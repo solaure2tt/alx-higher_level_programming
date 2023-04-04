@@ -3,8 +3,12 @@
     Addition two integer or float
     the result must be an integer
 """
+
+
 def add_integer(a, b=98):
-    """This function is to add two integer"""
+    """This function is to add two integer
+        Args: a - first number
+            b - second number"""
     if isinstance(a, float):
         a = int(a)
     if isinstance(b, float):
@@ -14,5 +18,5 @@ def add_integer(a, b=98):
             return (a + b)
         else:
             raise TypeError("b must be an integer")
-    else :
+    else:
         raise TypeError("a must be an integer")
