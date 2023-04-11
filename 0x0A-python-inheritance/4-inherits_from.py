@@ -7,8 +7,5 @@ from the specified class
 
 def inherits_from(obj, a_class):
     """return True if obj directly or indirectly
-    inherited from a_class
-    Args: obj - object
-        a_class - class
-    """
+    inherited from a_class"""
     return (issubclass(type(obj), a_class) and type(obj) != a_class)
