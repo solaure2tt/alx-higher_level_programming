@@ -17,15 +17,15 @@ class Rectangle {
     }
   }
 
-  rotate() {
+  rotate () {
     const x = this.width;
     this.width = this.height;
     this.height = x;
   }
 
-  double() {
-   this.width = this.width * 2;
-   this.height = this.height * 2;
+  double () {
+    this.width = this.width * 2;
+    this.height = this.height * 2;
   }
 }
 
