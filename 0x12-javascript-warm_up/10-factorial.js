@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const process = require('process');
 const argv = process.argv;
-function fact(a) {
+function fact (a) {
   if ((a === 1) || (a === 0)) {
     return (1);
   }
