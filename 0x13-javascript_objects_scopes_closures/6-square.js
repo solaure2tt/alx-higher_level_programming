@@ -34,7 +34,7 @@ class Square extends Rectangle {
     super(size, size);
   }
 
-  charPrint(c) {
+  charPrint (c) {
     if (typeof c === 'undefined') {
       this.print();
     } else {
@@ -48,4 +48,5 @@ class Square extends Rectangle {
     }
   }
 }
+module.exports = Rectangle;
 module.exports = Square;
