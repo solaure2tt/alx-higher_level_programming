@@ -15,7 +15,8 @@ if __name__ == '__main__':
     lo = "localhost"
     db = MySQLdb.connect(host=lo, port=3306, user=uName, passwd=pwd, db=dbn)
     cur = db.cursor()
-    que = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(val)
+    que = "SELECT * FROM states WHERE CONVERT(`name` USING Latin1) \
+           COLLATE Latin1_General_CS = '{}' ORDER BY id ASC;".format(val)
     cur.execute(que)
     rows = cur.fetchall()
     for row in rows:

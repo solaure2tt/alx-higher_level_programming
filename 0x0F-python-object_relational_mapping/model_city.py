@@ -6,7 +6,6 @@ import MySQLdb
 from model_state import Base
 
 
-
 class City(Base):
     """creation of the table states"""
     __tablename__ = 'cities'
