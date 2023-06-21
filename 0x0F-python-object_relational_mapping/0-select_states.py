@@ -4,7 +4,6 @@ import sys
 import MySQLdb
 
 
-
 if __name__ == "__main__":
     """ lists all states from a given  database """
     uName = sys.argv[1]
