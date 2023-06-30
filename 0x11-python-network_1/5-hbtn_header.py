@@ -8,5 +8,5 @@ import sys
 if __name__ == '__main__':
     url = sys.argv[1]
     res = requests.get(url)
-    te = res.headers['X-Request-Id']
+    te = res.headers.get("X-Request-Id")
     print(te)
