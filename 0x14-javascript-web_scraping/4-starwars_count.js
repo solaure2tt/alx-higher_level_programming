@@ -1,5 +1,5 @@
 #!/usr/bin/node
-var request = require('request');
+let request = require('request');
 let url = 'https://swapi-api.alx-tools.com/api/films/';
 request(url, (error, response, body) => {
   if (error) {

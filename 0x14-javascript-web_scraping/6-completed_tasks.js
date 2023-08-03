@@ -1,5 +1,5 @@
 #!/usr/bin/node
-var request = require('request');
+let request = require('request');
 let url = 'https://jsonplaceholder.typicode.com/todos';
 request(url, (error, response, body) => {
   if (error) {
